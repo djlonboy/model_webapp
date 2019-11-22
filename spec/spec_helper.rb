@@ -23,7 +23,9 @@ RSpec.configure do |config|
   require 'capybara'
   require 'capybara/rspec'
   require 'rspec'
-  
+  require 'features/web_helpers' # Allows repeated actions in feature tests to
+                                 # be outsourced to this file
+
   Capybara.app = ControllerClass
 
   # rspec-expectations config goes here. You can use an alternate
