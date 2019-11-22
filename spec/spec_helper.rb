@@ -23,6 +23,7 @@ RSpec.configure do |config|
   require 'capybara'
   require 'capybara/rspec'
   require 'rspec'
+  
   Capybara.app = ControllerClass
 
   # rspec-expectations config goes here. You can use an alternate
