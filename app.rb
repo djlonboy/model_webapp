@@ -1,3 +1,6 @@
+# Controller for the web app. Each page is controlled by it's own GET / POST
+# block below
+
 require 'sinatra/base'
 require './db/database_connection.rb'
 require './lib/access_database.rb'

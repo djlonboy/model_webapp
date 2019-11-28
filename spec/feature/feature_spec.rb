@@ -1,3 +1,5 @@
+# Feature tests for the web app
+
 require "capybara/rspec"
 
 feature 'web app does things' do
