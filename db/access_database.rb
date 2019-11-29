@@ -8,7 +8,7 @@ class AccessDatabase
     output.map { |line| line }
   end
 
-  # Takes a line number and returns that line of the selected table
+  # Takes a table and line number and returns that line of the selected table
   # in the database, in a nested array:
 
   def self.get_line(table, line)
