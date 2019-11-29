@@ -41,5 +41,25 @@
       <tr>
     </table>
 
+    <p></p>
+
+  <table id="my_table">
+    <tr>
+      <% @dataline[0].keys.each do |item| %>
+      <th><%= item %></th>
+      <% end %>
+    </tr>
+      <% @dataline.each do |item| %>
+        <tr>
+          <% item.each do |key_value| %>
+            <td><%= key_value[1] %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    <tr>
+  </table>
+
+
+
   </body>
 </html>

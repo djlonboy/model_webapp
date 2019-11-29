@@ -3,7 +3,7 @@
 
 require 'sinatra/base'
 require './db/database_connection.rb'
-require './lib/access_database.rb'
+require './db/access_database.rb'
 require './lib/model.rb'
 
 class ControllerClass < Sinatra::Base
@@ -17,7 +17,8 @@ class ControllerClass < Sinatra::Base
   end
 
   get '/show-db' do
-    @database = AccessDatabase.get_all
+    @database = AccessDatabase.get_all('my_table')
+    @dataline = AccessDatabase.get_line('my_table', 1)
     erb :show_db
   end
 
